@@ -1,64 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
+Soal :
 
-## About Laravel
+Buatlah suatu program dengan menggunakan bahasa HTML,CSS, PHP serta terhubung dengan basis data MySQL, tentang simulasi perhitungan cicilan pinjaman Online. Dalam program tersebut terdiri dari 5 fungsi. Fungsi Pertama digunakan untuk menginputkan data peminjam, fungsi kedua digunakan untuk menginput jumlah pinjaman disertai dengan tenor pembayaran, fungsi ketiga digunakan untuk menampilkan informasi mengenai angsuran yang harus dibayar dimulai angasuran pertama hingga angsuran terakhir berdasarkan tenor yang ditentukan peminjam, fungsi keempat digunakan untuk mensimulasikan peminjam membayar angsuran dengan menginputkan jumlah yang dibayar sesuai jumlah angsuran, dan fungsi kelima digunakan untuk menampilkan jumlah/total sisa angsuran keseluruhan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Terdapat aturan dalam melakukan peminjaman, antara lain sebagai berikut :
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+1. Untuk tenor dapat ditentukan berdasarkan hari/bulan. Jika opsi yang dipilih hari (berlaku hanya untuk peminjaman dibawah Rp.20.000.000,-) maka pilihan waktu pembayaran adalah 3 hari, 7 hari ,14 hari, dan 30 hari. Jika opsi yang dipilih bulan (berlaku hanya untuk peminjaman diatasRp.20.000.000,- ) maka pilihan waktu pembayaran adalah 3 bulan, 6 bulan, 12 bulan.
+2. Bunga yang digunakan pada pinjaman online ini menggunakan Bunga Efektif. Perhitungan bunga untuk pinjaman berdasarkan hari sebesar 0.5%  per hari sedangkan pinjaman berdasarkan bulan sebesar 10% per bulan.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
+Contoh :
 
-## Learning Laravel
+ Andre mengajukan pinjaman online  sebesar RP.120.000.000 dengan bunga 10% per bulan dengan tenor 6 bulan. Angsuran yang harus dibayar oleh Andre adalah sebagai berikut :
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### __Ansguran bulan 1__
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Besaran bunga : RP.120.000.000 x 10% (bunga per bulan) = Rp. 12.000.000,-
 
-## Laravel Sponsors
+Angsuran pokok :  RP.120.000.000,- / 6 = Rp.20.000.000,- 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Total angsuran bulan 1 :  Rp.20.000.000,- + Rp. 12.000.000,- = Rp.36.000.000 ,-
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### __Angsuran bulan 2__
 
-## Contributing
+Saldo Pokok (SP) :  RP.120.000.000,- - Rp.20.000.000,-  = Rp.100.000.000,-
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Besaran bunga : Rp. 100.000.000,- x 10% =  Rp. 10.000.000,-
 
-## Code of Conduct
+Total angsuran bulan 2 = Rp.20.000.000,- +  Rp. 10.000.000,- = Rp. 30.000.000,-
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+### __Angsuran bulan 3__
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Saldo Pokok (SP) :  RP.100.000.000,- - Rp.20.000.000,-  = Rp.80.000.000,-
 
-## License
+Besaran bunga : Rp. 80.000.000,- x 10% =  Rp. 8.000.000,-
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Total angsuran bulan 3 = Rp.20.000.000,- +  Rp. 8.000.000,- = Rp. 28.000.000,-
+
+
+### __Angsuran bulan 4__
+
+Saldo Pokok (SP) :  RP.80.000.000,- - Rp.20.000.000,-  = Rp.60.000.000,-
+
+Besaran bunga : Rp. 60.000.000,- x 10% =  Rp. 6.000.000,-
+
+Total angsuran bulan 4 = Rp.20.000.000,- +  Rp. 6.000.000,- = Rp. 26.000.000,-
+
+
+### __Angsuran bulan 5__
+
+Saldo Pokok (SP) :  RP.60.000.000,- - Rp.20.000.000,-  = Rp.40.000.000,-
+
+Besaran bunga : Rp. 40.000.000,- x 10% =  Rp. 4.000.000,-
+
+Total angsuran bulan 5 = Rp.20.000.000,- +  Rp. 4.000.000,- = Rp. 24.000.000,-
+
+
+
+### __Angsuran bulan 6__
+
+Saldo Pokok (SP) :  RP.40.000.000,- - Rp.20.000.000,-  = Rp.20.000.000,-
+
+Besaran bunga : Rp. 2.000.000,- x 10% =  Rp. 2.000.000,-
+
+Total angsuran bulan 6 = Rp.20.000.000,- +  Rp. 2.000.000,- = Rp. 22.000.000,-
+
+---
+
+Mekanisme pengerjaan :
+
+1. Program dikerjakan secara berkelompok dengan menggunakan pendekatan pemrograman berorientasi objek.
+2. Program dibangun dengan menggunakan UI berdasarkan soal.
+3. Setelah program telah dibangun setiap kelompok diwajibkan mempresentasikan hasil pekerjaan berupa penjelasan pengoperasian program dan penjelasaan source code(menjelaskan alur kerja program).
+4. Presentasi dapat dilakukan dengan menggunakan  Zoom/G Meet dan direkam/didokumentasikan. Saat presentasi wajah mahasiswa wajib terlihat jelas.
+5. Video presentasi di unggah pada Google Drive  dan dapat di akses tanpa request access. Share link  GDrive melalui ELING
+6. Kode Program dan file Basis Data di kompress dalam 1 file Zip di unggah melalui ELING pada tempat yang disediakan.
+---
