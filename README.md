@@ -78,4 +78,8 @@ Mekanisme pengerjaan :
 4. Presentasi dapat dilakukan dengan menggunakan  Zoom/G Meet dan direkam/didokumentasikan. Saat presentasi wajah mahasiswa wajib terlihat jelas.
 5. Video presentasi di unggah pada Google Drive  dan dapat di akses tanpa request access. Share link  GDrive melalui ELING
 6. Kode Program dan file Basis Data di kompress dalam 1 file Zip di unggah melalui ELING pada tempat yang disediakan.
+<<<<<<< HEAD
 ---
+=======
+---
+>>>>>>> b1491b9aad78a1c48ba256416b8b02bb64a5b372

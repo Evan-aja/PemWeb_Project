@@ -1,0 +1,10 @@
+login mysql
+mysql -u root
+
+masukin query
+create database laravel;
+create user 'laravel'@'%' identified by '123';
+grant all privileges on laravel.* to 'laravel'@'%';
+
+coba login ke laravel
+mysql -ularavel -p123
