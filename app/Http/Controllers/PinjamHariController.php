@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class PinjamHariController extends Controller
 {
     public function create(){
-        return view('createPinjamBulan');
+        return view('createPinjamHari');
     }
     public function store(Request $request){
         $pinjamHari=new PinjamHari();
@@ -19,7 +19,7 @@ class PinjamHariController extends Controller
             $pinjamHari->save();
         }catch (Exception $e){
             return response()->json([
-                'message'=>'Peminjaman Berjangka Bulanan gagal',
+                'message'=>'Peminjaman Berjangka Harian gagal',
                 'error'=> $e,
                 'data'=>[
                     'jumlah'=>$request->get('jumlah'),
@@ -31,7 +31,7 @@ class PinjamHariController extends Controller
             ],500);
         }
         return response()->json([
-            'message'=>'Peminjaman Berjangka Bulanan berhasil',
+            'message'=>'Peminjaman Berjangka Harian berhasil',
             'data'=>[
                 'jumlah'=>$request->get('jumlah'),
                 'durasi'=>$request->get('durasi'),
