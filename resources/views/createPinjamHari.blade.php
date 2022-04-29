@@ -8,7 +8,7 @@
     <br/>
     <div class="panel panel-primary">
         <div class="panel-heading">
-            Add Pinjam Bulan Details
+            Add Pinjam Hari Details
         </div>
         <div class="panel-body">
             <form method="post" action="{{ route('pinjambulan.store') }}">
