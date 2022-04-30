@@ -25,6 +25,22 @@ Route::get('/pembayaran_1', function () {
     return view('pembayaran_1');
 });
 
+Route::get('/pembayaran_2', function () {
+    return view('pembayaran_2');
+});
+
+Route::get('/pembayaran_3', function () {
+    return view('pembayaran_3');
+});
+
+Route::get('/pembayaran_4', function () {
+    return view('pembayaran_4');
+});
+
+Route::get('/peminjaman_5', function () {
+    return view('peminjaman_5');
+});
+
 Route::get('peminjam', [\App\Http\Controllers\PeminjamController::class,'create'])->name('peminjam.create');
 Route::post('peminjam', [\App\Http\Controllers\PeminjamController::class,'store'])->name('peminjam.store');
 
