@@ -27,7 +27,9 @@
             
             <input type="text" class="kolomNIK" name="nik">
             <br>
-            <input type="button" value="Kirim" class="kirimNIK">
+            {{-- <input type="button" value="Kirim" class="kirimNIK"> --}}
+            <a href="pembayaran_4" class="kirim">Kirim</a>
+
         </form>
     </div>
 

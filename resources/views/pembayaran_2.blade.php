@@ -24,7 +24,9 @@
             <h2>Total tagihan Anda</h2>
             <h4>Rp. 120.000.000</h4>
             <form action="belumtau.php">
-            <input type="button" value="Bayar" class="bayar">
+            {{-- <input type="button" value="Bayar" class="bayar"> --}}
+            <a href="pembayaran_3" class="kirim">Kirim</a>
+
         </form>
         </div>
         

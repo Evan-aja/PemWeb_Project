@@ -17,14 +17,17 @@
         <!-- <h4 style="text-decoration: underline;">Kembali</h4> -->
         
         <form action="mainpage">
-            <input type="button" value="Kembali" class="kembali">
+            {{-- <input type="button" value="Kembali" class="kembali"> --}}
+            <a href="{{route('mainpage')}}">Kembali</a>
+
         </form>
 
-        <form action="belumtau.php">
+        <form action="belumtau.php" method="">
             <h2 >Data Peminjam</h2>
-            <input type="text" class="kolom" name="nik" placeholder="Jumlah Pinjaman">
+            <input type="text" class="kolom" name="jumlah" placeholder="Jumlah Pinjaman">
             <br>
-            <input type="button" value="Kirim" class="kirim">
+            <a href="rincianTagihanHarian" class="kirim">Kirim</a>
+            {{-- <input type="button" value="Kirim" class="kirim"> --}}
         </form>
     </div>
 

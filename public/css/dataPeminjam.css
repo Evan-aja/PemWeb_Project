@@ -4,6 +4,15 @@
     border: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    color: #5075BF;
+}
 body {
     font-family: 'Lexend', sans-serif;
     position: relative;
@@ -72,13 +81,16 @@ body {
 }
 
 .kirim{
+    text-decoration: none !important;
     position: absolute;
+    text-align: center;
     background-color: #254689;
     width: 8vw;
     height: 5vh;
     color: white;
     font-family: 'Lexend', sans-serif;
     border-radius: 5px;
+    padding-top: 0.7%;
     margin-top: 6vh;
     margin-left: 2vw;
 }

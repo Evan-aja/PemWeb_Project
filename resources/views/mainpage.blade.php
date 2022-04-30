@@ -18,8 +18,11 @@
         <h2>Pinjaman online solusinya!</h2>
 
         <form action="" class="tombol">
-            <input type="button" value="Pinjam duit" class="pinjam">
-            <input type="button" value="Bayar tagihan" class="bayar">
+            <a href="{{route('dataPeminjam')}}" class="pinjam button">Pinjam duit</a>
+            {{-- <input type="button" value="Pinjam duit" class="pinjam" formaction="{{route('dataPeminjam')}}" name="dataPeminjam"> --}}
+            <a href="{{route('pembayaran_1')}}" class="bayar button">Bayar tagihan</a>
+            
+            {{-- <input type="button" value="Bayar tagihan" class="bayar"> --}}
         </form>
     </div>
 </body>

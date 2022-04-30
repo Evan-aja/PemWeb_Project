@@ -4,6 +4,16 @@
     border: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+    text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    font-size: 16px;
+    /* text-decoration: underline; */
+    color: #5075BF;
+}
 body {
     font-family: 'Lexend', sans-serif;
     position: relative;
@@ -81,6 +91,8 @@ body {
     border-radius: 5px;
     margin-top: 6vh;
     margin-left: 17.5vw;
+    padding-left: 4.5%;
+    padding-top: 0.7%;
 }
 
 .kirim:hover{
