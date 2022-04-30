@@ -48,11 +48,6 @@
                         Kembali ke halaman utama
                     </button>
                 </a>
-                <a href="{{ route('peminjam.create') }}">
-                    <button>
-                        Kembali ke halaman daftar
-                    </button>
-                </a>
                 <a href="{{ route('pinjambulan.create') }}">
                     <button>
                         Kembali ke halaman pinjam tenor bulanan (>= Rp. 20.000.000)
