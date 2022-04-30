@@ -24,6 +24,30 @@ Route::get('/mainpage', function () {
     return view('mainpage');
 });
 
+Route::get('/dataPeminjam', function () {
+    return view('dataPeminjam');
+});
+
+Route::get('/jumlahPinjaman', function () {
+    return view('jumlahPinjaman');
+});
+
+Route::get('/tenorBulanan', function () {
+    return view('tenorBulanan');
+});
+
+Route::get('/tenorHarian', function () {
+    return view('tenorHarian');
+});
+
+Route::get('/rincianTagihanBulanan', function () {
+    return view('rincianTagihanBulanan');
+});
+
+Route::get('/rincianTagihanHarian', function () {
+    return view('rincianTagihanHarian');
+});
+
 Route::get('/pembayaran_1', function () {
     return view('pembayaran_1');
 });
