@@ -2,7 +2,7 @@
 <html>
 <head>
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/createPinjamBulan.css">
+    <link href="{{asset('css/createPinjamBulan.css')}}" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" >
@@ -34,7 +34,7 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary add">Pinjam</button>
-                    <button type="submit" class="btn btn-primary simulate" formaction="{{route('pinjambulan.simulate')}}">Simulasikan Angsuran</button>
+                    <button type="submit" class="btn btn-primary simulate" formaction="{{route('pinjambulan.simulate')}}">Simulasikan</button>
                 </div>
             </form>
             <a href="{{route('halo')}}">

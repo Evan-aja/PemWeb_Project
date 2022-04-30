@@ -11,9 +11,9 @@
 </div>
 <div class="whitebox">
     <div class="panel panel-primary">
-       
+
             <h1>Peminjaman Tenor Harian</h1>
-    
+
         <div class="panel-body">
             <form method="post" action="{{ route('pinjamhari.store') }}">
                 {{csrf_field()}}

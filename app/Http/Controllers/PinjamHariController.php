@@ -64,6 +64,6 @@ class PinjamHariController extends Controller
 //                'nik'=>\App\Models\Peminjam::find($request->get('peminjam_id'))->nik
 //            ]
 //        ],200);
-        return view('resultPinjamHari',['pinjamhari'=>$pinjamHari]);
+        return view('peminjaman_5');
     }
 }
