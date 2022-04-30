@@ -18,7 +18,9 @@
         <div class="deskripsi">
         <img src="{{asset('image/Check Circle Icon.svg')}}" alt="Berhasil" width="150" >
             <h2>Pendaftaran Berhasil</h2>
+            <h4>ID Kamu adalah {{$peminjam->id}}</h4>
         </div>
+        <h5>Simpan ID mu untuk mendapatkan pinjaman</h5>
         <a href="{{ route('halo') }}">
                     <button class="bayar">
                         Kembali ke halaman utama

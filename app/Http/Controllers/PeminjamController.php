@@ -29,6 +29,6 @@ class PeminjamController extends Controller
 //            'message'=>'Pendaftaran berhasil',
 //            'data'=>$peminjam
 //        ],200);
-        return view('pendaftaran_sukses');
+        return view('pendaftaran_sukses',['peminjam'=>$peminjam]);
     }
 }

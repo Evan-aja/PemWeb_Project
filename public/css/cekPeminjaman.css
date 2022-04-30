@@ -16,32 +16,41 @@ a{
 }
 body {
     font-family: 'Lexend', sans-serif;
-    position: relative;
-    background-image: url('/image/frederick-warren-lOg_fQLHo7s-unsplash.jpg');
-    background-repeat: no-repeat;
+    background-color: #2862D1 !important;
+    /* position: relative; */
+    /* background-image: url('/image/frederick-warren-lOg_fQLHo7s-unsplash.jpg'); */
+    /* background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100vh; */
+}
+.gambar{
+    background-image: url('/image/frederick-warren-lOg_fQLHo7s-unsplash.jpg');
+    background-repeat:repeat;
+    /* background-size: cover; */
+    width: 100%;
+    height: auto;
+    opacity: 25%;
 }
 
 .container{
     position: absolute;
     background-color: #2862D1 !important;
     width: 100%;
-    height: 100%;
+    height:max-content;
     z-index: 1 !important;
-    opacity: 75%;
+    opacity: 100%;
 }
 .whitebox{
     position: relative;
     z-index: 1 !important;
     width: 45%;
-    height: 88%;
+    height: auto;
     background-color: white;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
     top: 6%;
     /* bottom: 93%; */
     border-radius: 40px;
@@ -66,4 +75,10 @@ body {
 }
 .kembali:hover{
     cursor: pointer;
+}
+
+.rincian{
+    overflow: scroll;
+    width: 5vw;
+    height: 5vh;
 }
