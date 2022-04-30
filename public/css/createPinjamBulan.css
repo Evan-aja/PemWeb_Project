@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    color: #5075BF;
+}
+
+h1{
+    text-align: center;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    position: relative;
+    background-image: url('/image/frederick-warren-lOg_fQLHo7s-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container{
+    position: absolute;
+    background-color: #2862D1 !important;
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    opacity: 75%;
+}
+.whitebox{
+    position: relative;
+    z-index: 1 !important;
+    width: 45%;
+    height: 88%;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 6%;
+    /* bottom: 93%; */
+    border-radius: 40px;
+    padding : 50px 50px 50px 50px;
+    color: #5075BF;
+}
+
+label{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.whitebox h2{
+    margin-top: 6vh;
+    text-align: center;
+}
+
+.kolom{
+    font-family: 'Lexend', sans-serif;
+    margin-top: 5vh;
+    margin-left: 4.75vw;
+    border: 2px solid #3762B6;
+    width: 20vw;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 6.5px;
+    outline: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.kolom2{
+    font-family: 'Lexend', sans-serif;
+    margin-top: 5vh;
+    margin-left: 5.3vw;
+    border: 2px solid #3762B6;
+    width: 20vw;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 6.5px;
+    outline: none;
+    padding: 10px 10px 10px 10px;
+}
+.kolom3{
+    font-family: 'Lexend', sans-serif;
+    margin-top: 5vh;
+    margin-left: 1.34vw;
+    border: 2px solid #3762B6;
+    width: 20vw;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 6.5px;
+    outline: none;
+    padding: 10px 10px 10px 10px;
+}
+
+.kolom:focus{
+    border: 2px solid #254689;
+}
+
+.add{
+    text-decoration: none !important;
+    position: absolute;
+    text-align: center;
+    background-color: #254689;
+    width: 8vw;
+    height: 5vh;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    border-radius: 5px;
+    padding-top: 0.7%;
+    margin-top: 6vh;
+    margin-left: 2vw;
+}
+
+.add:hover{
+    cursor: pointer;
+}
+
+.simulate{
+    text-decoration: none !important;
+    position: absolute;
+    text-align: center;
+    background-color: #254689;
+    width: 8vw;
+    height: 5vh;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    left: 30%;
+    border-radius: 5px;
+    padding-top: 0.7%;
+    margin-top: 6vh;
+    margin-left: 2vw;
+}
+
+.simulate:hover{
+    cursor: pointer;
+}
+
+.return{
+    text-decoration: none !important;
+    position: absolute;
+    text-align: center;
+    background-color: #254689;
+    width: 8vw;
+    height: 5vh;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    left: 53%;
+    border-radius: 5px;
+    padding-top: 0.7%;
+    margin-top: 6vh;
+    margin-left: 2vw;
+}
+
+.return:hover{
+    cursor: pointer;
+}
