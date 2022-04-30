@@ -27,10 +27,14 @@
             </div>
             <div class="displayTenor3">
                 @for($i = 0;$i<30;$i++)
-                    <input type="button" value="{{$i+1}}" class="tenor3">
-
-                    <p>{{11202300+(($i+5)*$i)*300000}}</p>
+                <p>
+                    <div class="rincian"> 
+                        <p class="tenor3">{{$i+1}}</p>
+                        <p>{{11202300+(($i+5)*$i)*300000}}</p>
+                    </div>
+                    
                 @endfor
+                
             </div>
             <div class="displayTenorTotal">
                 Total Rp.360.000.000
