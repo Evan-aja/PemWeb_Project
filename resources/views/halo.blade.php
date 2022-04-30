@@ -33,7 +33,7 @@
         <form method="post" action="{{ route('cek') }}">
             {{csrf_field()}}
             <div class="form-group">
-                <input type="text" class="form-control" name="id"/>
+                <input type="text" class="form-control id" name="id" placeholder="ID check"/>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary cek">Cek</button>
