@@ -14,39 +14,39 @@ class PinjamHariSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('pinjam_bulans')->insert([
+        \DB::table('pinjam_haris')->insert([
             'jumlah' => 2000000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
-            'durasi' => date_add(date_create(NOW()),date_interval_create_from_date_string("6 Days")),
+            'durasi' => "7 Days",
             'peminjam_id' => '3'
         ]);
-        \DB::table('pinjam_bulans')->insert([
+        \DB::table('pinjam_haris')->insert([
             'jumlah' => 2100000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
-            'durasi' => date_add(date_create(NOW()),date_interval_create_from_date_string("6 Days")),
+            'durasi' => "7 Days",
             'peminjam_id' => '3'
         ]);
-        \DB::table('pinjam_bulans')->insert([
+        \DB::table('pinjam_haris')->insert([
             'jumlah' => 4000000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
-            'durasi' => date_add(date_create(NOW()),date_interval_create_from_date_string("6 Days")),
+            'durasi' => "7 Days",
             'peminjam_id' => '1'
         ]);
-        \DB::table('pinjam_bulans')->insert([
-            'jumlah' => 20540000,
+        \DB::table('pinjam_haris')->insert([
+            'jumlah' => 2054000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
-            'durasi' => date_add(date_create(NOW()),date_interval_create_from_date_string("6 Days")),
+            'durasi' => "7 Days",
             'peminjam_id' => '2'
         ]);
         \DB::table('pinjam_haris')->insert([
             'jumlah' => 2000000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
-            'durasi' => date_add(date_create(NOW()),date_interval_create_from_date_string("6 Days")),
+            'durasi' => "7 Days",
             'peminjam_id' => '1'
         ]);
     }

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->increments('id');
             $table->boolean('lunas')->default(false);
             $table->double('jumlah');
-            $table->date('durasi');
+            $table->string('durasi');
             $table->integer('peminjam_id')->unsigned();
             $table->foreign('peminjam_id')->references('id')->on('peminjams');
             $table->timestamps();
