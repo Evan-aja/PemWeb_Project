@@ -21,11 +21,12 @@
 </head>
 <body>
 <div class="container">
+    <img src="/image/frederick-warren-lOg_fQLHo7s-unsplash.jpg" alt="background" class="gambar">
 </div>
     <div class="whitebox">
     <div class="panel panel-primary">
         <div class="panel-body">
-            <table style="width: 90%;margin-left: auto;margin-right: auto;">
+            <table style="width: 90%;margin-left: auto;margin-right: auto;" class="rincian">
                 <th colspan="4">
                     <div class="panel-heading">
                         Total Pinjaman Dengan Tenor Bulanan
@@ -89,7 +90,7 @@
             </table>
                 <a href="{{ route('halo') }}">
                     <button class="kembali">
-                        Kembali ke halaman utama
+                        Kembali
                     </button>
                 </a>
 
