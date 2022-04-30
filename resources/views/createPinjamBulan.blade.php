@@ -9,12 +9,13 @@
 </head>
 <body>
 <div class="container">
+</div>
     <div class="whitebox">
 
     <br/>
     <div class="panel panel-primary">
 
-        <h1>Add Pinjam Bulan Details</h1>   
+        <h1>Peminjaman Tenor Bulanan</h1>   
 
         <div class="panel-body">
             <form method="post" action="{{ route('pinjambulan.store') }}">
@@ -24,7 +25,7 @@
                     <input type="text" class="form-control kolom" name="jumlah"/>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-4">Durasi</label>
+                    <label class="col-md-4">Tenor</label>
                     <input type="text" class="form-control kolom2" name="durasi"/>
                 </div>
                 <div class="form-group">
@@ -32,15 +33,17 @@
                     <input type="text" class="form-control kolom3" name="peminjam_id"/>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary add">Add</button>
-                    <button type="submit" class="btn btn-primary simulate" formaction="{{route('pinjambulan.simulate')}}">Simulate</button>
-                    <button type="submit" class="btn btn-primary return" formaction="{{route('halo')}}">Return</button>
+                    <button type="submit" class="btn btn-primary add">Pinjam</button>
+                    <button type="submit" class="btn btn-primary simulate" formaction="{{route('pinjambulan.simulate')}}">Simulasikan Angsuran</button>
                 </div>
             </form>
+            <a href="{{route('halo')}}">
+            <button type="submit" class="btn btn-primary return">Kembali</button>
+            </a>
         </div>
     </div>
 </div>
 
-</div>
+
 </body>
 </html>

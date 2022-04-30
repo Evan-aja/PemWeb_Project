@@ -62,8 +62,8 @@ Route::get('/pembayaran_3', function () {
     return view('pembayaran_3');
 });
 
-Route::get('/pembayaran_4', function () {
-    return view('pembayaran_4');
+Route::get('/pendaftaran_sukses', function () {
+    return view('pendaftaran_sukses');
 });
 
 Route::get('/peminjaman_5', function () {

@@ -1,10 +1,13 @@
 <!doctype html>
 <html>
 <head>
-    <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="{{asset('/css/cekPeminjaman.css')}}" rel="stylesheet" type="text/css" />
     <style>
         tr, th , td {
-            border: 2px solid #c65990;
+            border: 2px solid #2862D1;
             padding: 8px;
         }
         table{
@@ -18,13 +21,14 @@
 </head>
 <body>
 <div class="container">
-    <br/>
+</div>
+    <div class="whitebox">
     <div class="panel panel-primary">
         <div class="panel-body">
-            <table style="width: 90%;margin-left: auto;margin-right: auto">
+            <table style="width: 90%;margin-left: auto;margin-right: auto;">
                 <th colspan="4">
                     <div class="panel-heading">
-                        Total pinjam Bulan
+                        Total Pinjaman Dengan Tenor Bulanan
                     </div>
                 </th>
                 <tr>
@@ -52,7 +56,7 @@
                 </tr>
                 <th colspan="4">
                     <div class="panel-heading">
-                        Total pinjam Hari
+                        Total Pinjaman Dengan Tenor Harian
                     </div>
                 </th>
                 <tr>
@@ -83,30 +87,15 @@
                     <td>{{number_format($bulan+$hari,decimal_separator: ',',thousands_separator: '.')}}</td>
                 </tr>
             </table>
-            <div style="margin-right: auto;margin-left: auto; text-align: center;display: block">
                 <a href="{{ route('halo') }}">
-                    <button>
+                    <button class="kembali">
                         Kembali ke halaman utama
                     </button>
                 </a>
-                <a href="{{ route('peminjam.create') }}">
-                    <button>
-                        Masuk halaman daftar
-                    </button>
-                </a>
-                <a href="{{ route('pinjambulan.create') }}">
-                    <button>
-                        Masuk halaman pinjam tenor bulanan (>= Rp. 20.000.000)
-                    </button>
-                </a>
-                <a href="{{ route('pinjamhari.create') }}">
-                    <button>
-                        Masuk halaman pinjam tenor harian (< Rp. 20.000.000)
-                    </button>
-                </a>
-            </div>
+
         </div>
     </div>
-</div>
+    </div>
+
 </body>
 </html>

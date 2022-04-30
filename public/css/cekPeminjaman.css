@@ -1,4 +1,5 @@
 *{
+    font-family: 'Lexend', sans-serif;
     box-sizing: border-box;
     padding: 0;
     border: 0;
@@ -6,12 +7,11 @@
 }
 a{
     text-decoration: none;
-    text-decoration: none;
     font-family: 'Lexend', sans-serif;
     font-weight: 400;
     background-color: white;
     font-size: 16px;
-    /* text-decoration: underline; */
+    text-decoration: underline;
     color: #5075BF;
 }
 body {
@@ -22,6 +22,7 @@ body {
     background-size: cover;
     height: 100vh;
 }
+
 .container{
     position: absolute;
     background-color: #2862D1 !important;
@@ -29,49 +30,40 @@ body {
     height: 100%;
     z-index: 1 !important;
     opacity: 75%;
-  
 }
 .whitebox{
     position: relative;
     z-index: 1 !important;
-    width: 50%;
-    height: 70%;
+    width: 45%;
+    height: 88%;
     background-color: white;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    top: 15%;
+    top: 6%;
     /* bottom: 93%; */
     border-radius: 40px;
     padding : 50px 50px 50px 50px;
     color: #5075BF;
 }
 
-.deskripsi{
-    margin-top: 6vh;
-    text-align: center;
-}
-
-.bayar{
+.kembali{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     background-color: #254689;
-    width: 15vw;
     height: 5vh;
     color: white;
     font-family: 'Lexend', sans-serif;
     border-radius: 5px;
     margin-top: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-
-.bayar:hover{
+.kembali:hover{
     cursor: pointer;
-}
-
-
-.deskripsi h2{
-    margin-top: 5vh;
 }
