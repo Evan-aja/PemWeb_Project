@@ -2,39 +2,46 @@
 <html>
 <head>
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/halo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" >
 </head>
 <body>
 <div class="container">
     <br/>
     <div class="panel panel-primary">
+        <div class="whitebox">
         <h1>
             Selamat Datang
         </h1>
         <h3>
-            Ada yang bisa kami bantu?
+            Pendaftaran Peminjaman
         </h3>
         <a href="{{route('peminjam.create')}}">
-            <button>Registrasi Akun</button>
+            <button class="registrasi">Registrasi Akun</button>
         </a>
-        <p>Sudah terdaftar?<br>Jika iya, silahkan memilai transaksi dengan menekan tombol dibawah<br>Simulasi peminjaman dapat dilakukan didalam halaman yang dipilih</p>
+        <br>
+
+        <p>Bila sudah mendaftar, Peminjaman dapat dilakukan didalam halaman yang dipilih</p>
         <a href="{{route('pinjambulan.create')}}">
-            <button>Pinjam Tenor Bulanan (>=20.000.000)</button>
+            <button class="pinjamBulan">Pinjam Tenor Bulanan (>=20.000.000)</button>
         </a>
         <a href="{{route('pinjamhari.create')}}">
-            <button>Pinjam Tenor Harian (<20.000.000)</button>
+            <button class="pinjamHarian">Pinjam Tenor Harian (<20.000.000)</button>
         </a>
         <br>
         <p>Untuk melakukan pengecekan total pinjaman, masukkan id anda dan tekan tombol 'Cek'</p>
         <form method="post" action="{{ route('cek') }}">
             {{csrf_field()}}
             <div class="form-group">
-                <label class="col-md-4">ID</label>
-                <input type="text" class="form-control" name="id"/>
+                <input type="text" class="form-control id" name="id" placeholder="ID check"/>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Cek</button>
+                <button type="submit" class="btn btn-primary cek">Cek</button>
             </div>
         </form>
+    </div>
     </div>
 </div>
 </body>

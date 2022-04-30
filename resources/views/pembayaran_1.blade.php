@@ -24,7 +24,9 @@
             <h2 >Masukkan NIK Anda</h2>
             <input type="text" class="kolomNIK" name="nik">
             <br>
-            <input type="button" value="Kirim" class="kirimNIK">
+            {{-- <input type="button" value="Kirim" class="kirimNIK"> --}}
+            <a href="pembayaran_2" class="kirim">Kirim</a>
+
         </form>
     </div>
 

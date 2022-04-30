@@ -17,7 +17,9 @@
         <!-- <h4 style="text-decoration: underline;">Kembali</h4> -->
         
         <form action="mainpage">
-            <input type="button" value="Kembali" class="kembali">
+            {{-- <input type="button" value="Kembali" class="kembali"> --}}
+            <a href="{{route('mainpage')}}" class="kembali">kembali</a>
+
         </form>
 
         <form action="belumtau.php">
@@ -40,7 +42,8 @@
                 Total Rp.360.000.000
             </div>
             <br>
-            <input type="button" value="Konfirmasi" class="kirim">
+            {{-- <input type="button" value="Konfirmasi" class="kirim"> --}}
+            <a href="peminjaman_5" class="kirim">Kirim</a>
         </form>
     </div>
 

@@ -4,8 +4,18 @@
     border: 0;
     margin: 0;
 }
-body {
+a{
+    text-decoration: none;
+    text-decoration: none;
     font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    font-size: 16px;
+    /* text-decoration: underline; */
+    color: #5075BF;
+}
+body {
+    font-family: 'Lexend', sans-serif !important;
     position: relative;
     background-image: url('/image/frederick-warren-lOg_fQLHo7s-unsplash.jpg');
     background-repeat: no-repeat;
@@ -69,8 +79,14 @@ body {
     border-radius: 5px;
     font-weight: 400;
     font-size: 15px;
+    
 }
 
 .tombol{
     margin-top: 5vh;
+    
+}
+
+.button{
+    padding: 6px 16px 6px 16px;
 }

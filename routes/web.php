@@ -20,6 +20,8 @@ Route::get('/', function () {
     return view('halo');
 })->name('halo');
 
+
+
 Route::get('/mainpage', function () {
     return view('mainpage');
 });
@@ -80,3 +82,43 @@ Route::post('pinjam/hari', [\App\Http\Controllers\PinjamHariController::class,'s
 Route::post('simulate/hari', [\App\Http\Controllers\PinjamHariController::class,'simulate'])->name('pinjamhari.simulate');
 
 Route::post('cek',[\App\Http\Controllers\CekPinjamanController::class,'cek'])->name('cek');
+
+## Buat Nampilin Halaman Selanjutnya
+
+Route::get('mainpage', function () {
+    return view('mainpage');
+})->name('mainpage');
+
+
+Route::get('dataPeminjam', function () {
+    return view('dataPeminjam');
+})->name('dataPeminjam');
+
+Route::get('jumlahPinjaman', function () {
+    return view('jumlahPinjaman');
+})->name('jumlahPinjaman');
+
+Route::get('rincianTagihanHarian', function () {
+    return view('rincianTagihanHarian');
+})->name('rincianTagihanHarian');
+
+
+Route::get('pembayaran_1', function () {
+    return view('pembayaran_1');
+})->name('pembayaran_1');
+
+Route::get('pembayaran_2', function () {
+    return view('pembayaran_2');
+})->name('pembayaran_2');
+
+Route::get('pembayaran_3', function () {
+    return view('pembayaran_3');
+})->name('pembayaran_3');
+
+Route::get('pembayaran_4', function () {
+    return view('pembayaran_4');
+})->name('pembayaran_4');
+
+Route::get('peminjaman_5', function () {
+    return view('peminjaman_5');
+})->name('peminjaman_5');
