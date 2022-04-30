@@ -70,52 +70,24 @@ body {
 .kolom:focus{
     border: 2px solid #254689;
 }
-.tenor3{
-    position: absolute;
+
+.pilihanTenor{
     background-color: #254689;
-    width: 4vw;
-    height: 5vh;
+    width: 45px;
+    height: 35px;
     color: white;
     font-family: 'Lexend', sans-serif;
     font-size: large;
+    margin-right: 10px;
     border-radius: 5px;
-    margin-top: 11vh;
-    margin-left: 10vw;
 }
-.tenor6{
-    position: absolute;
-    background-color: #254689;
-    width: 4vw;
-    height: 5vh;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    font-size: large;
 
-    border-radius: 5px;
-
-    margin-top: 11vh;
-    margin-left: 15vw;
-}
-.tenor12{
-    position: absolute;
-    background-color: #254689;
-    width: 4vw;
-    height: 5vh;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    font-size: large;
-
-    border-radius: 5px;
-    margin-top: 11vh;
-    margin-left: 20vw;
-}
-.bulan{
-    position: absolute;
-    top: 50.5%;
-    right: 28%;
-    width: 4vw;
-    height: 4vh;
-    
+.pilihan{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin-top: 10vh;
 }
 .kirim{
     position: absolute;
@@ -129,8 +101,6 @@ body {
     margin-left: 2vw;
 }
 
-.tenor3:hover,
-.tenor6:hover,
-.tenor12:hover{
+.pilihanTenor:hover{
     cursor: pointer;
 }

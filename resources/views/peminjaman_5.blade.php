@@ -16,7 +16,6 @@
     <div class="whitebox">
         <!-- <h4 style="text-decoration: underline;">Kembali</h4> -->
         
-        
         <div class="deskripsi">
         <img src="/image/Check Circle Icon.svg" alt="Berhasil" width="150" >
             <h2>Peminjaman Berhasil</h2>
@@ -24,9 +23,6 @@
             <input type="button" value="Kembali Ke Menu Utama" class="bayar">
         </form>
         </div>
-        
-
-        
     </div>
 
 </body>

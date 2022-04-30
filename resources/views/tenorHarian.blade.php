@@ -19,19 +19,20 @@
         <form action="mainpage">
             <input type="button" value="Kembali" class="kembali">
         </form>
+        <h2 class="tenor">Tenor</h2>
+        <div class="pilihan" >
+        <form action="belumtau.php" >
+            <input type="button" value="3" class="pilihanTenor">
 
-        <form action="belumtau.php">
-            <h2 class="tenor">Tenor</h2>
-            <input type="button" value="3" class="tenor3">
+            <input type="button" value="7" class="pilihanTenor">
 
-            <input type="button" value="7" class="tenor7">
+            <input type="button" value="14" class="pilihanTenor">
 
-            <input type="button" value="14" class="tenor14">
-
-            <input type="button" value="30" class="tenor30">
-
-            <h2 class="hari">Hari</h2>
+            <input type="button" value="30" class="pilihanTenor">
         </form>
+        <h2 class="hari">Hari</h2>
+        </div>
+        
     </div>
 
 </body>

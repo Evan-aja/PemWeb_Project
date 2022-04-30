@@ -54,6 +54,17 @@ body {
     text-align: center;
 }
 
+.pilihanTenor{
+    background-color: #254689;
+    width: 3vw;
+    height: 5vh;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-size: large;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
 .kolom{
     font-family: 'Lexend', sans-serif;
     margin-top: 5vh;
@@ -70,67 +81,15 @@ body {
 .kolom:focus{
     border: 2px solid #254689;
 }
-.tenor3{
-    position: absolute;
-    background-color: #254689;
-    width: 4vw;
-    height: 5vh;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    font-size: large;
-    border-radius: 5px;
-    margin-top: 11vh;
-    margin-left: 7vw;
-}
-.tenor7{
-    position: absolute;
-    background-color: #254689;
-    width: 4vw;
-    height: 5vh;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    font-size: large;
 
-    border-radius: 5px;
 
-    margin-top: 11vh;
-    margin-left: 12vw;
-}
-.tenor14{
-    position: absolute;
-    background-color: #254689;
-    width: 4vw;
-    height: 5vh;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    font-size: large;
-
-    border-radius: 5px;
-    margin-top: 11vh;
-    margin-left: 17vw;
-}
-
-.tenor30{
-    position: absolute;
-    background-color: #254689;
-    width: 4vw;
-    height: 5vh;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    font-size: large;
-
-    border-radius: 5px;
-    margin-top: 11vh;
-    margin-left: 22vw;
-}
-
-.hari{
-    position: absolute;
-    top: 50.8%;
-    right: 25%;
-    width: 4vw;
-    height: 4vh;
-    
+.pilihan{
+    justify-content: center;
+    /* border: 3px black solid; */
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin-top: 10vh;
 }
 .kirim{
     position: absolute;
@@ -144,8 +103,6 @@ body {
     margin-left: 2vw;
 }
 
-.tenor3:hover,
-.tenor6:hover,
-.tenor12:hover{
+.pilihanTenor:hover{
     cursor: pointer;
 }
