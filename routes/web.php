@@ -122,8 +122,3 @@ Route::get('pembayaran_4', function () {
 Route::get('peminjaman_5', function () {
     return view('peminjaman_5');
 })->name('peminjaman_5');
-
-## Ngirim ke Database
-
-Route::get('data', [\App\Http\Controllers\PeminjamController::class,'create'])->name('data.create');
-Route::post('data', [\App\Http\Controllers\PeminjamController::class,'store'])->name('data.store');
