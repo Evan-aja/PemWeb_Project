@@ -8,3 +8,17 @@ grant all privileges on laravel.* to 'laravel'@'%';
 
 coba login ke laravel
 mysql -ularavel -p123
+
+inisialisasi database
+dari terminal:
+    composer update
+    npm install
+    cp .env.example .env
+    php artisan key:generate
+    php artisan migrate:refresh
+    composer dump-autoload
+    php artisan db:seed
+
+ubah .env biar si laravel bisa login ke mysql yang udah di setup
+
+coba masuk ke folder public dari browser,tes semua blade file yang ada, terus buat port nya ke blade yang udah stilized dari front end
