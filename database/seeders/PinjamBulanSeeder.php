@@ -15,21 +15,21 @@ class PinjamBulanSeeder extends Seeder
     public function run()
     {
         \DB::table('pinjam_bulans')->insert([
-            'jumlah' => 2000000,
+            'jumlah' => 20000000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
             'durasi' => "6 Months",
             'peminjam_id' => '3'
         ]);
         \DB::table('pinjam_bulans')->insert([
-            'jumlah' => 2100000,
+            'jumlah' => 21000000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
             'durasi' => "6 Months",
             'peminjam_id' => '3'
         ]);
         \DB::table('pinjam_bulans')->insert([
-            'jumlah' => 4000000,
+            'jumlah' => 40000000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
             'durasi' => "6 Months",
@@ -43,7 +43,7 @@ class PinjamBulanSeeder extends Seeder
             'peminjam_id' => '2'
         ]);
         \DB::table('pinjam_bulans')->insert([
-            'jumlah' => 2000000,
+            'jumlah' => 20000000,
             'created_at' => NOW(),
             'updated_at' => NOW(),
             'durasi' => "6 Months",

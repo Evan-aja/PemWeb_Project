@@ -40,10 +40,10 @@
                     @php($bunga=(float)$pinjambulan->jumlah*(10/100))
                     <tr>
                         <td>{{$i}}</td>
-                        <td>{{$pinjambulan->jumlah}}</td>
-                        <td>{{$angsuran}}</td>
-                        <td>{{$bunga}}</td>
-                        <td>{{$bunga+$angsuran}}</td>
+                        <td>{{number_format($pinjambulan->jumlah,decimal_separator: ',',thousands_separator: '.')}}</td>
+                        <td>{{number_format($angsuran,decimal_separator: ',',thousands_separator: '.')}}</td>
+                        <td>{{number_format($bunga,decimal_separator: ',',thousands_separator: '.')}}</td>
+                        <td>{{number_format($bunga+$angsuran,decimal_separator: ',',thousands_separator: '.')}}</td>
                     </tr>
                     @php($pinjambulan->jumlah-=$angsuran)
                 @endfor
@@ -56,7 +56,7 @@
                 </a>
                 <a href="{{ route('peminjam.create') }}">
                     <button>
-                        Kembali ke halaman daftar
+                        Masuk halaman daftar
                     </button>
                 </a>
                 <a href="{{ route('pinjambulan.create') }}">
