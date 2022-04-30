@@ -27,6 +27,8 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn-primary" formaction="{{route('pinjambulan.simulate')}}">Simulate</button>
+                    <button type="submit" class="btn btn-primary" formaction="{{route('halo')}}">Return</button>
                 </div>
             </form>
         </div>

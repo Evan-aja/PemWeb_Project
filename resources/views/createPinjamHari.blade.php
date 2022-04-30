@@ -11,7 +11,7 @@
             Add Pinjam Hari Details
         </div>
         <div class="panel-body">
-            <form method="post" action="{{ route('pinjambulan.store') }}">
+            <form method="post" action="{{ route('pinjamhari.store') }}">
                 {{csrf_field()}}
                 <div class="form-group">
                     <label class="col-md-4">Jumlah</label>
@@ -27,6 +27,8 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn-primary" formaction="{{route('pinjamhari.simulate')}}">Simulate</button>
+                    <button type="submit" class="btn btn-primary" formaction="{{route('halo')}}">Return</button>
                 </div>
             </form>
         </div>

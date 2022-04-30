@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('halo');
+})->name('halo');
 
 Route::get('/mainpage', function () {
     return view('mainpage');
@@ -70,6 +73,10 @@ Route::post('peminjam', [\App\Http\Controllers\PeminjamController::class,'store'
 
 Route::get('pinjam/bulan', [\App\Http\Controllers\PinjamBulanController::class,'create'])->name('pinjambulan.create');
 Route::post('pinjam/bulan', [\App\Http\Controllers\PinjamBulanController::class,'store'])->name('pinjambulan.store');
+Route::post('simulate/bulan', [\App\Http\Controllers\PinjamBulanController::class,'simulate'])->name('pinjambulan.simulate');
 
 Route::get('pinjam/hari', [\App\Http\Controllers\PinjamHariController::class,'create'])->name('pinjamhari.create');
 Route::post('pinjam/hari', [\App\Http\Controllers\PinjamHariController::class,'store'])->name('pinjamhari.store');
+Route::post('simulate/hari', [\App\Http\Controllers\PinjamHariController::class,'simulate'])->name('pinjamhari.simulate');
+
+Route::post('cek',[\App\Http\Controllers\CekPinjamanController::class,'cek'])->name('cek');
