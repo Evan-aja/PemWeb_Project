@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/mainpage.css">
+    <link rel="stylesheet" href="css/mainpage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
             <a href="{{route('dataPeminjam')}}" class="pinjam button">Pinjam duit</a>
             {{-- <input type="button" value="Pinjam duit" class="pinjam" formaction="{{route('dataPeminjam')}}" name="dataPeminjam"> --}}
             <a href="{{route('pembayaran_1')}}" class="bayar button">Bayar tagihan</a>
-            
+
             {{-- <input type="button" value="Bayar tagihan" class="bayar"> --}}
         </form>
     </div>

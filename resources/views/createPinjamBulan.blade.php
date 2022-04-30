@@ -2,7 +2,7 @@
 <html>
 <head>
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/css/createPinjamBulan.css">
+    <link rel="stylesheet" href="css/createPinjamBulan.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" >
@@ -15,7 +15,7 @@
     <br/>
     <div class="panel panel-primary">
 
-        <h1>Peminjaman Tenor Bulanan</h1>   
+        <h1>Peminjaman Tenor Bulanan</h1>
 
         <div class="panel-body">
             <form method="post" action="{{ route('pinjambulan.store') }}">

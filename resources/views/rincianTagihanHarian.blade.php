@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/rincianTagihanHarian.css">
+    <link rel="stylesheet" href="css/rincianTagihanHarian.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
     </div>
     <div class="whitebox">
         <!-- <h4 style="text-decoration: underline;">Kembali</h4> -->
-        
+
         <form action="mainpage">
             {{-- <input type="button" value="Kembali" class="kembali"> --}}
             <a href="{{route('mainpage')}}" class="kembali">kembali</a>
@@ -30,13 +30,13 @@
             <div class="displayTenor3">
                 @for($i = 0;$i<30;$i++)
                 <p>
-                    <div class="rincian"> 
+                    <div class="rincian">
                         <p class="tenor3">{{$i+1}}</p>
                         <p>{{11202300+(($i+5)*$i)*300000}}</p>
                     </div>
-                    
+
                 @endfor
-                
+
             </div>
             <div class="displayTenorTotal">
                 Total Rp.360.000.000
