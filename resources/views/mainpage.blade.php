@@ -21,8 +21,6 @@
             <input type="button" value="Pinjam duit" class="pinjam">
             <input type="button" value="Bayar tagihan" class="bayar">
         </form>
-
     </div>
-    
 </body>
 </html>
