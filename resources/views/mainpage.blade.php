@@ -21,7 +21,7 @@
         </form>
 
         <form action="belumtau.php">
-            <h2>Masukkan NIK Anda</h2>
+            <h2 >Masukkan NIK Anda</h2>
             <input type="text" class="kolomNIK" name="nik">
             <br>
             <input type="button" value="Kirim" class="kirimNIK">

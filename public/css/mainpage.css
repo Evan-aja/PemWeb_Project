@@ -38,9 +38,6 @@ body {
     color: #5075BF;
 }
 
-.whitebox h4{
-    font-weight: 400;
-}
 
 .kembali{
     font-family: 'Lexend', sans-serif;
@@ -53,15 +50,15 @@ body {
 
 .whitebox h2{
     margin-top: 10vh;
-    margin-left: 28vh;
+    text-align: center;
 }
 
 .kolomNIK{
     font-family: 'Lexend', sans-serif;
     margin-top: 5vh;
-    margin-left: 20vh;
+    margin-left: 11.5vw;
     border: 2px solid #3762B6;
-    width: 349px;
+    width: 20vw;
     height: 40px;
     box-sizing: border-box;
     border-radius: 6.5px;
@@ -76,13 +73,13 @@ body {
 .kirimNIK{
     position: absolute;
     background-color: #254689;
-    width: 120px;
-    height: 40px;
+    width: 8vw;
+    height: 5vh;
     color: white;
     font-family: 'Lexend', sans-serif;
     border-radius: 5px;
     margin-top: 6vh;
-    margin-left: 17vw;
+    margin-left: 17.5vw;
 }
 
 .kirimNIK:hover{
