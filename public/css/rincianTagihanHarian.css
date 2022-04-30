@@ -76,61 +76,36 @@ body {
     margin-left: 2vw;
 }
 .displayTenor3{
+    width: 20vw;
+    height: 25vh;
     margin-top: 6%;
     margin-left: 5vw;
+    overflow: auto;
 }
-.displayTenor7{
-    margin-top: 6%;
-    margin-left: 5vw;
-}
-.displayTenor14{
-    margin-top: 6%;
-    margin-left: 5vw;
-}
-.displayTenor30{
-    margin-top: 6%;
-    margin-left: 5vw;
+.displayTenor3 p{
+    margin-top: 3px;
+
 }
 .displayTenorTotal{
     margin-top: 6%;
     margin-left: 2vw;
 }
 .tenor3{
-    position: absolute;
+    float: left;
+    margin-right: 8px;
+    margin-top: 3px;
+    position: relative;
     background-color: #254689;
     width: 2vw;
     height: 3vh;
     color: white;
     font-family: 'Lexend', sans-serif;
     /* font-size: large; */
-    border-radius: 5px;
-    margin-top: 0vh;
-    margin-left: -3vw;
+    /* border-radius: 5px; */
+    /* margin-top: 0vh; */
+    /* margin-left: -3vw; */
 }
-.tenor6{
-    position: absolute;
-    background-color: #254689;
-    width: 2vw;
-    height: 3vh;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    /* font-size: large; */
-    border-radius: 5px;
-    margin-top: 0vh;
-    margin-left: -3vw;
-}
-.tenor12{
-    position: absolute;
-    background-color: #254689;
-    width: 2vw;
-    height: 3vh;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    /* font-size: large; */
-    border-radius: 5px;
-    margin-top: 0vh;
-    margin-left: -3vw;
-}
+
 .kirim{
     position: relative;
     background-color: #254689;

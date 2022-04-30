@@ -26,23 +26,11 @@
                 120.000.000 - Tenor 3 Bulan
             </div>
             <div class="displayTenor3">
-            <input type="button" value="1" class="tenor3">
-                120.000.000 - Tenor 3 Bulan
-            </div>
-            <div class="displayTenor7">
-            <input type="button" value="2" class="tenor3">
+                @for($i = 0;$i<30;$i++)
+                    <input type="button" value="{{$i+1}}" class="tenor3">
 
-                120.000.000 - Tenor 6 Bulan
-            </div>
-            <div class="displayTenor14">
-            <input type="button" value="3" class="tenor3">
-
-                120.000.000 - Tenor 12 Bulan
-            </div>
-            <div class="displayTenor30">
-            <input type="button" value="4" class="tenor3">
-
-                120.000.000 - Tenor 12 Bulan
+                    <p>{{11202300+(($i+5)*$i)*300000}}</p>
+                @endfor
             </div>
             <div class="displayTenorTotal">
                 Total Rp.360.000.000
