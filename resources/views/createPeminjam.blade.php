@@ -11,11 +11,12 @@
 </head>
 <body>
 <div class="container">
+</div>
     <div class="whitebox">
     <br/>
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h1>Add Peminjam Details</h1>
+            <h1>Pendaftaran</h1>
         </div>
         <div class="panel-body">
             <form method="post" action="{{ route('peminjam.store') }}">
@@ -37,13 +38,22 @@
                     <input type="text" class="form-control kolom4" name="pekerjaan" placeholder="Pekerjaan"/>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary kirim">Add</button>
-                    <button type="submit" class="btn btn-primary kirim2" formaction="{{route('halo')}}">Return</button>
+                    <button type="submit" class="btn btn-primary kirim">Daftar</button>
                 </div>
             </form>
+            <a href="{{route('halo')}}">
+            <button type="submit" class="btn btn-primary kirim2">Kembali</button>
+            </a>
         </div>
     </div>
 </div>
-</div>
+
+<script>
+    var msg = '{{Session::get('alert')}}';
+    var exist = '{{Session::has('alert')}}';
+    if(exist){
+      alert(msg);
+    }
+  </script>
 </body>
 </html>

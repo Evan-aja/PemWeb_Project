@@ -57,6 +57,6 @@ class PinjamBulanController extends Controller
 //                'nik'=>\App\Models\Peminjam::find($request->get('peminjam_id'))->nik
 //            ]
 //        ],200);
-        return view('resultPinjamBulan',['pinjambulan'=>$pinjamBulan]);
+        return view('peminjaman_5');
     }
 }

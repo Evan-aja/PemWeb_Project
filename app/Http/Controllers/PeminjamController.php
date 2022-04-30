@@ -23,16 +23,12 @@ class PeminjamController extends Controller
             $peminjam->save();
             $peminjam=DB::table('peminjams')->where('nik',$peminjam->nik)->first();
         }catch (Exception $e){
-            return response()->json([
-                'message'=>'Pendaftaran gagal',
-                'error'=> $e,
-                'data'=>$peminjam
-            ],500);
+            return redirect()->back() ->with('alert', 'Pendaftaran Gagal');
         }
 //        return response()->json([
 //            'message'=>'Pendaftaran berhasil',
 //            'data'=>$peminjam
 //        ],200);
-        return view('resultPeminjam',['peminjam'=>$peminjam]);
+        return view('pendaftaran_sukses');
     }
 }
