@@ -18,7 +18,12 @@ class pembayaranController extends Controller
                 ]);
             }else{
                 $pembagi=explode(' ',$pinjam->durasi);
-                $pinjam->jumlah=$pinjam->jumlah-($pinjam->jumlah/$pembagi[0]);
+                if($pembagi[0]<=0){
+                	$pinjam->jumlah=0;
+                    $pinjam->lunas=true;
+                }else{
+                	$pinjam->jumlah=$pinjam->jumlah-($pinjam->jumlah/$pembagi[0]);
+                }
                 $angka=(int)$pembagi[0];
                 $angka=$angka-1;
                 $pinjam->durasi=$angka.' '.$pembagi[1];

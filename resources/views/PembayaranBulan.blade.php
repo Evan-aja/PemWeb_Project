@@ -44,8 +44,14 @@
                     <td>{{$pinjam->peminjam_id}}</td>
                     <td>{{$pinjam->durasi}}</td>
                     <td>{{$pinjam->jumlah}}</td>
-                    @php ($exploder=explode(' ',$pinjam->durasi))
-                    @php ($cicilan=((double)$pinjam->jumlah/(double)$exploder[0])+((double)$pinjam->jumlah*(10/100)))
+                    @php
+                        $exploder=explode(' ',$pinjam->durasi);
+                    	if((double)$exploder[0]<=0){
+                    		$cicilan=((double)$pinjam->jumlah)+((double)$pinjam->jumlah*(10/100));
+                    	}else{
+	                    	$cicilan=((double)$pinjam->jumlah/(double)$exploder[0])+((double)$pinjam->jumlah*(10/100));
+	                    }
+                    @endphp
                     <td>{{($cicilan)}}</td>
                 </tr>
             </table>
