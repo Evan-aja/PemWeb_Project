@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('/css/cekPembayaran.css')}}" rel="stylesheet" type="text/css" />
 {{--    <link href="{{asset('css/createPinjamBulan.css')}}" rel="stylesheet" type="text/css" />--}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +10,9 @@
 <body>
 <div class="container">
 </div>
-    <br/>
+<div class="whitebox">
+
+
     <div class="panel panel-primary">
 
         <h1>Pembayaran Pinjaman</h1>
@@ -20,25 +22,30 @@
                 {{csrf_field()}}
                 <div class="form-group">
                     <label class="col-md-4">ID Pinjaman
-                    <input type="text" class="form-control kolom3" name="ids"/>
+                        <br>
+                    <input type="text" class="kolomID" name="ids" required/>
                     </label>
                 </div>
                 <br>
                 <label for="pilihan">Pilih jenis pinjaman:</label>
-                <select name="pilihan" id="pilihan">
-                    <option value="bulan">Pinjam Tenor Bulanan</option>
+                <select name="pilihan" id="pilihan" class="tenor">
+                    <option value="bulan" >Pinjam Tenor Bulanan</option>
                     <option value="hari">Pinjam Tenor Harian</option>
                 </select>
                 <div class="form-group">
-                    <button type="submit">Cek Cicilan</button>
-                    <button type="submit" formaction="{{route('bayar.store')}}">Bayar</button>
-                    <button type="submit" formaction="{{route('halo')}}">Kembal ke Beranda</button>
+                    <button type="submit" class="tombol a">Cek Cicilan</button>
+                    <button type="submit" formaction="{{route('bayar.store')}}" class="tombol a">Bayar</button>
+                    
                 </div>
             </form>
+            <a href="{{route('halo')}}">
+            <button type="submit" formaction=""  class="tombol">Kembal ke Beranda</button>
+            </a>
+            
             <div id="hasil_cek"></div>
         </div>
 </div>
-
+</div>
 
 </body>
 </html>

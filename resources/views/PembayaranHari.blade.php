@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('css/cekRincian.css')}}" rel="stylesheet" type="text/css" />
 {{--    <link href="{{asset('css/createPinjamBulan.css')}}" rel="stylesheet" type="text/css" />--}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
 <body>
 <div class="container">
 </div>
-    <br/>
+<div class="whitebox">
     <div class="panel panel-primary">
         <div class="panel-body">
             <table style="width: 90%;margin-left: auto;margin-right: auto;">
@@ -51,12 +51,12 @@
             </table>
             <div style="margin-right: auto;margin-left: auto; text-align: center;display: block">
                 <a href="{{route('cekbayar.create')}}">
-                    <button>Kembali</button>
+                    <button class="tombol">Kembali</button>
                 </a>
             </div>
         </div>
 </div>
 
-
+</div>
 </body>
 </html>
