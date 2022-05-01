@@ -83,6 +83,10 @@ Route::post('simulate/hari', [\App\Http\Controllers\PinjamHariController::class,
 
 Route::post('cek',[\App\Http\Controllers\CekPinjamanController::class,'cek'])->name('cek');
 
+Route::post('pembayaran/bayar',[App\Http\Controllers\pembayaranController::class,'store'])->name('bayar.store');
+
+Route::get('pembayaran/cek',[App\Http\Controllers\cekPembayaranController::class,'create'])->name('cekbayar.create');
+Route::post('pembayaran/cek',[App\Http\Controllers\cekPembayaranController::class,'store'])->name('cekbayar.store');
 ## Buat Nampilin Halaman Selanjutnya
 
 Route::get('mainpage', function () {

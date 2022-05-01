@@ -41,11 +41,11 @@
             </table>
             <div class="detail">
             <table style="width: 90%;margin-left: auto;margin-right: auto">
-    
+
                 @php($durasi=explode(" ",$pinjamhari->durasi))
                 @php ($angsuran=$pinjamhari->jumlah/(int)$durasi[0])
                 @for($i=1;$i<=(int)$durasi[0];$i++)
-                    @php($bunga=(float)$pinjamhari->jumlah*(10/100))
+                    @php($bunga=(float)$pinjamhari->jumlah*(0.5/100))
                     <tr>
                         <td>{{$i}}</td>
                         <td>{{number_format($pinjamhari->jumlah,decimal_separator: ',',thousands_separator: '.')}}</td>
@@ -63,7 +63,7 @@
                         Kembali
                     </button>
                 </a>
-               
+
             </div>
         </div>
     </div>

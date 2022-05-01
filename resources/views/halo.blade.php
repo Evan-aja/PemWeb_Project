@@ -31,6 +31,10 @@
         <a href="{{route('pinjamhari.create')}}">
             <button class="pinjamHarian">Pinjam Tenor Harian (Pinjaman kurang dari Rp 20.000.000)</button>
         </a>
+        <h4>Untuk melakukan pembayaran silahkan klik tombol dibawah</h4>
+        <a href="{{route('cekbayar.create')}}">
+            <button class="pinjamHarian">Pembayaran pinjaman</button>
+        </a>
         <br>
         <h4>Untuk melakukan pengecekan total pinjaman, masukkan id anda dan tekan tombol 'Cek'</h4>
         <form method="post" action="{{ route('cek') }}">

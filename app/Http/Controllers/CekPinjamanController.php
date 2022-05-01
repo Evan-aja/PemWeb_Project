@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\DB;
 class CekPinjamanController extends Controller
 {
     public function cek(Request $request){
-        $pinjambulan=DB::table('pinjam_bulans')->where('peminjam_id',$request->get('id'))->get();
-        $pinjamhari=DB::table('pinjam_haris')->where('peminjam_id',$request->get('id'))->get();
+        $pinjambulan=DB::table('pinjam_bulans')->where('peminjam_id',$request->get('id'))->where('lunas',0)->get();
+        $pinjamhari=DB::table('pinjam_haris')->where('peminjam_id',$request->get('id'))->where('lunas',0)->get();
         return view('cekPinjaman',['pinjambulan'=>$pinjambulan,'pinjamhari'=>$pinjamhari]);
     }
 }
