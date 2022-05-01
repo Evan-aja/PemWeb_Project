@@ -21,7 +21,7 @@
 </head>
 <body>
 <div class="container">
-    <img src="/image/frederick-warren-lOg_fQLHo7s-unsplash.jpg" alt="background" class="gambar">
+    <img src="{{asset('image/frederick-warren-lOg_fQLHo7s-unsplash.jpg')}}" alt="background" class="gambar">
 </div>
     <div class="whitebox">
     <div class="panel panel-primary">
