@@ -11,7 +11,6 @@ class pembayaranController extends Controller
 {
     public function store(Request $request){
         if($request->get('pilihan')=='bulan'){
-//            $pinjam=new PinjamBulan();
             $pinjam=DB::table('pinjam_bulans')->find($request->get('ids'));
             if($pinjam->lunas==1){
                 return response()->json([
@@ -27,13 +26,18 @@ class pembayaranController extends Controller
                 return view('PembayaranBulan',['pinjam'=>$pinjam]);
             }
         }else{
-            $pinjam=new PinjamHari();
             $pinjam=DB::table('pinjam_haris')->find($request->get('ids'));
             if($pinjam->lunas==1){
                 return response()->json([
                     'message'=>'pinjaman telah dilunasi'
-                ]);
+               ]);
             }else{
+                $pembagi=explode(' ',$pinjam->durasi);
+                $pinjam->jumlah=$pinjam->jumlah-($pinjam->jumlah/$pembagi[0]);
+                $angka=(int)$pembagi[0];
+                $angka=$angka-1;
+                $pinjam->durasi=$angka.' '.$pembagi[1];
+                DB::table('pinjam_haris')->where('id',$pinjam->id)->update(['jumlah'=>$pinjam->jumlah,'durasi'=>$pinjam->durasi]);
                 return view('PembayaranHari',['pinjam'=>$pinjam]);
             }
         }

@@ -45,7 +45,7 @@
                     <td>{{$pinjam->durasi}}</td>
                     <td>{{$pinjam->jumlah}}</td>
                     @php ($exploder=explode(' ',$pinjam->durasi))
-                    @php ($cicilan=((double)$pinjam->jumlah/(double)$exploder[0])+((double)$pinjam->jumlah*(10/100)))
+                    @php ($cicilan=((double)$pinjam->jumlah/(double)$exploder[0])+((double)$pinjam->jumlah*(0.5/100)))
                     <td>{{($cicilan)}}</td>
                 </tr>
             </table>
