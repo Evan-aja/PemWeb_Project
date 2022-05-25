@@ -40,6 +40,14 @@ class tesPembayaran extends TestCase
         ]);
         $response->assertStatus(200);
     }
+    public function test_bayar_pay_bulan_lunas(): void
+    {
+        $response=$this->post(route('bayar.store'),[
+            'ids'=>1,
+            'pilihan'=>'hari'
+        ]);
+        $response->assertStatus(500);
+    }
     public function test_bayar_pay_hari(): void
     {
         $response=$this->post(route('bayar.store'),[
@@ -47,5 +55,13 @@ class tesPembayaran extends TestCase
             'pilihan'=>'hari'
         ]);
         $response->assertStatus(200);
+    }
+    public function test_bayar_pay_hari_lunas(): void
+    {
+        $response=$this->post(route('bayar.store'),[
+            'ids'=>1,
+            'pilihan'=>'hari'
+        ]);
+        $response->assertStatus(500);
     }
 }
