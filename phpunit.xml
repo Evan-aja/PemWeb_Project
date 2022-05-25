@@ -10,6 +10,7 @@
             <directory suffix="tesPeminjam.php">./tests/Unit</directory>
             <directory suffix="tesPinjamBulan.php">./tests/Unit</directory>
             <directory suffix="tesPinjamHari.php">./tests/Unit</directory>
+            <directory suffix="tesPembayaran.php">./tests/Unit</directory>
         </testsuite>
         <testsuite name="Feature">
 <!--            <directory suffix="Test.php">./tests/Feature</directory>-->
