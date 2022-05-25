@@ -64,7 +64,7 @@ Route::get('/pembayaran_3', function () {
 
 Route::get('/pendaftaran_sukses', function () {
     return view('pendaftaran_sukses');
-});
+})->name('pendaftaran_sukses');
 
 Route::get('/peminjaman_5', function () {
     return view('peminjaman_5');

@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Peminjam extends Model
 {
+    protected $fillable = [
+        'nama',
+        'nik',
+        'alamat',
+        'pekerjaan'
+    ];
     public function pinjambulan(){
         return $this->hasMany('App\Models\PinjamBulan');
     }

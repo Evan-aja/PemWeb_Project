@@ -6,10 +6,14 @@
 >
     <testsuites>
         <testsuite name="Unit">
-            <directory suffix="Test.php">./tests/Unit</directory>
+<!--            <directory suffix="Test.php">./tests/Unit</directory>-->
+            <directory suffix="tesPeminjam.php">./tests/Unit</directory>
+            <directory suffix="tesPinjamBulan.php">./tests/Unit</directory>
+            <directory suffix="tesPinjamHari.php">./tests/Unit</directory>
+            <directory suffix="tesPembayaran.php">./tests/Unit</directory>
         </testsuite>
         <testsuite name="Feature">
-            <directory suffix="Test.php">./tests/Feature</directory>
+<!--            <directory suffix="Test.php">./tests/Feature</directory>-->
         </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
