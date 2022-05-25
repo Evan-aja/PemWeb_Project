@@ -17,7 +17,7 @@ class tesPeminjam extends TestCase
         $response=$this->get(route('peminjam.create'));
         $response->assertStatus(200);
     }
-    public function test_register_test(): void
+    public function test_register_user(): void
     {
         $response=$this->post(route('peminjam.store'),[
             'nama'=>'Gabriel',
@@ -25,9 +25,20 @@ class tesPeminjam extends TestCase
             'alamat'=>'Malang',
             'pekerjaan'=>'Kuliah'
         ]);
-        if ($response->status(200) || $response->status(302)){
-            $this->assertTrue(true);
-        }
+        $response->assertStatus(200);
+        // if ($response->status(200) || $response->status(302)){
+        //     $this->assertTrue(true);
+        // }
+    }
+    public function test_register_user_not_duplicate(): void
+    {
+        $response=$this->post(route('peminjam.store'),[
+            'nama'=>'Gabriel',
+            'nik'=>'2055',
+            'alamat'=>'Malang',
+            'pekerjaan'=>'Kuliah'
+        ]);
+        $response->assertStatus(302);
     }
     public function test_account_duplicate(): void
     {
@@ -48,6 +59,15 @@ class tesPeminjam extends TestCase
     public function test_registered_user(): void
     {
         $this->assertDatabaseHas('peminjams',[
+            'nama'=>'Gabriel',
+            'nik'=>'2055',
+            'alamat'=>'Malang',
+            'pekerjaan'=>'Kuliah'
+        ]);
+    }
+    public function test_registered_user_missing(): void
+    {
+        $this->assertDatabaseMissing('peminjams',[
             'nama'=>'Gabriel',
             'nik'=>'2055',
             'alamat'=>'Malang',
